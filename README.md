@@ -1,11 +1,11 @@
-About r-groupdata2
-==================
+About r-groupdata2-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-groupdata2-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ludvigolsen/groupdata2
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-groupdata2-feedstock/blob/main/LICENSE.txt)
 
 Summary: Methods for dividing data into groups. Create balanced partitions and cross-validation folds. Perform time series windowing and general grouping and splitting of data. Balance existing groups with up- and downsampling or collapse them to fewer groups.
 
