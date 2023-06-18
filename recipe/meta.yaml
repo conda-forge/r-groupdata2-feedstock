@@ -1,4 +1,4 @@
-{% set version = '2.0.2' %}
+{% set version = "2.0.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/groupdata2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/groupdata2/groupdata2_{{ version }}.tar.gz
-  sha256: 85bee0a66d777414c1873bf661a95fdba88aad5a8bab1a157187f30e5ef198c5
+  sha256: 1f7b4c4fb27741082bb5db758a58d421ba0b54991d41ffa34d81797670352264
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -57,12 +57,10 @@ test:
 about:
   home: https://github.com/ludvigolsen/groupdata2
   license: MIT
-  summary: Methods for dividing data into groups. Create balanced partitions and cross-validation
-    folds. Perform time series windowing and general grouping and splitting of data.
-    Balance existing groups with up- and downsampling or collapse them to fewer groups.
+  summary: Methods for dividing data into groups. Create balanced partitions and cross-validation folds. Perform time series windowing and general grouping and splitting of data. Balance existing groups with up- and downsampling or collapse them to fewer groups.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
