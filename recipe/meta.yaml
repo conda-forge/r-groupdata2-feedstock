@@ -1,6 +1,5 @@
 {% set version = "2.0.3" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-groupdata2
@@ -13,8 +12,7 @@ source:
   sha256: 1f7b4c4fb27741082bb5db758a58d421ba0b54991d41ffa34d81797670352264
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
